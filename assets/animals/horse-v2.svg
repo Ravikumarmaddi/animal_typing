@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="Running horse">
+<defs><linearGradient id="coat" x2="0" y2="1"><stop stop-color="#d99a61"/><stop offset="1" stop-color="#a96645"/></linearGradient><linearGradient id="mane" x2="0" y2="1"><stop stop-color="#665046"/><stop offset="1" stop-color="#3d3131"/></linearGradient></defs>
+<ellipse cx="129" cy="165" rx="112" ry="10" fill="#25415a" opacity=".15"/>
+<path d="M62 85q-28-6-38 17-7 17-20 26 26 7 46-14" fill="url(#mane)" stroke="#57433b" stroke-width="4" stroke-linejoin="round"/>
+<path d="M72 64q48-16 86 9l30 9q14 25-6 48-16 19-68 18H77q-34-6-36-40-2-28 31-44Z" fill="url(#coat)" stroke="#77543e" stroke-width="4"/>
+<path d="M72 128 58 166h15l26-33M115 139l-1 27h15l10-30M155 133l12 33h16l-4-43" fill="url(#coat)" stroke="#77543e" stroke-width="4" stroke-linejoin="round"/>
+<path d="M56 164h25m31 1h22m30 0h24" stroke="#5b4841" stroke-width="6" stroke-linecap="round"/>
+<path d="M158 82q8-36 25-49 18-13 37-2 15 10 13 32l17 32q6 14-9 26-16 13-40 1l-25-16Z" fill="url(#coat)" stroke="#77543e" stroke-width="4" stroke-linejoin="round"/>
+<path d="M174 61q-9-14-20-13 2 16-11 23 18 1 24 16M185 40q-3-21 8-28 12-1 14 23M218 36q6-21 18-18 7 10-4 29" fill="url(#mane)" stroke="#57433b" stroke-width="4" stroke-linejoin="round"/>
+<path d="M192 31q-3-13 2-14m34 25 5-17" stroke="#c98b89" stroke-width="4" stroke-linecap="round"/>
+<path d="M189 69q-8 20-4 31" fill="none" stroke="#ebbc82" stroke-width="6" opacity=".7" stroke-linecap="round"/>
+<ellipse cx="225" cy="73" rx="5" ry="6" fill="#26333a"/><circle cx="227" cy="70" r="1.5" fill="#fff"/><ellipse cx="241" cy="102" rx="4" ry="3" fill="#62463c"/><path d="M222 111q10 7 19-1" fill="none" stroke="#62463c" stroke-width="3" stroke-linecap="round"/>
+</svg>

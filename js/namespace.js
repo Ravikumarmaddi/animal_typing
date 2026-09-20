@@ -1,0 +1,1 @@
+window.AnimalTyping = window.AnimalTyping || {};

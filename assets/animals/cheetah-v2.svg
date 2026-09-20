@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="Running cheetah">
+<defs><linearGradient id="coat" x2="0" y2="1"><stop stop-color="#ffda77"/><stop offset="1" stop-color="#eba845"/></linearGradient><pattern id="spots" width="25" height="22" patternUnits="userSpaceOnUse"><circle cx="6" cy="7" r="3.5" fill="#785133"/><circle cx="19" cy="17" r="3" fill="#785133"/></pattern></defs>
+<ellipse cx="130" cy="165" rx="113" ry="10" fill="#25415a" opacity=".15"/>
+<path d="M54 90Q22 81 14 105q-5 17-12 21 11 14 32 6 16-7 23-18" fill="none" stroke="#b87839" stroke-width="12" stroke-linecap="round"/>
+<path d="M48 85q25-25 75-23 40 1 63 25 16 18 4 42-11 21-55 22H85q-46 0-50-29-3-22 13-37Z" fill="url(#coat)" stroke="#896040" stroke-width="4"/>
+<path d="M48 85q25-25 75-23 40 1 63 25 16 18 4 42-11 21-55 22H85q-46 0-50-29-3-22 13-37Z" fill="url(#spots)" opacity=".9"/>
+<path d="m67 136-16 30h16l30-25m31 5 1 20h15l12-27m22-16 16 43h16l-8-57" fill="url(#coat)" stroke="#896040" stroke-width="4" stroke-linejoin="round"/>
+<path d="M47 166h23m57 0h23m43 0h22" stroke="#6d533e" stroke-width="6" stroke-linecap="round"/>
+<path d="M168 82q4-35 31-43 27-8 43 14 10 15 8 38-2 35-31 43-29 6-43-18Z" fill="url(#coat)" stroke="#896040" stroke-width="4"/>
+<path d="M184 51 181 25q15-10 28 16m20 0 19-22q15 11 5 39" fill="#d89a47" stroke="#896040" stroke-width="4" stroke-linejoin="round"/><path d="m191 33 8 11m43-13-9 14" stroke="#f3bc83" stroke-width="5" stroke-linecap="round"/>
+<path d="M213 75q-6 9-2 22m28-19q-8 13-9 24" stroke="#604636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="208" cy="73" rx="5" ry="6" fill="#28363a"/><ellipse cx="237" cy="76" rx="5" ry="6" fill="#28363a"/><circle cx="210" cy="71" r="1.5" fill="#fff"/><circle cx="239" cy="74" r="1.5" fill="#fff"/>
+<path d="m219 99 8 5-8 5-8-5Z" fill="#694337"/><path d="M220 111q-9 8-18 2m18-2q9 7 18 0" fill="none" stroke="#694337" stroke-width="3" stroke-linecap="round"/>
+</svg>

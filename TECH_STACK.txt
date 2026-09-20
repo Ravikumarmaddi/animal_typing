@@ -1,0 +1,25 @@
+ANIMAL TYPING GAME - TECH STACK
+
+Front end:
+- HTML5
+- Vanilla JavaScript (ES6+)
+- CSS3
+- Bootstrap 5.3.6 bundled locally
+
+Persistence:
+- Browser LocalStorage under animalTyping.v1
+
+Configuration:
+- config/game-config.json
+- config/game-config.runtime.js fallback for file:// startup
+
+Assets:
+- Original local SVG animal/scenery/icon artwork
+- Local WAV sound effects
+- No runtime CDN or remote asset dependency
+
+Run model:
+- No Node.js/npm required
+- No build step
+- No backend/database/API key
+- Extract ZIP and open index.html

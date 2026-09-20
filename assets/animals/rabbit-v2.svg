@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-label="Happy rabbit">
+<defs><linearGradient id="fur" x2="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#dce8ed"/></linearGradient></defs>
+<ellipse cx="130" cy="162" rx="99" ry="11" fill="#25415a" opacity=".14"/>
+<path d="M58 117q-8-37 31-54 42-18 85 15 25 18 21 45-5 30-57 34H96q-32 0-38-40Z" fill="url(#fur)" stroke="#849ba7" stroke-width="4"/>
+<circle cx="55" cy="107" r="22" fill="#fffdf9" stroke="#849ba7" stroke-width="4"/>
+<path d="M106 142q-10 10-24 10M155 142q8 11 23 10" fill="none" stroke="#849ba7" stroke-width="6" stroke-linecap="round"/>
+<path d="M167 77q-18-64-5-71 19-8 27 61M193 74q2-65 20-66 19-1 5 74" fill="url(#fur)" stroke="#849ba7" stroke-width="4" stroke-linejoin="round"/>
+<path d="M171 57q-7-38-4-43M205 57q2-35 7-42" fill="none" stroke="#ef9eaa" stroke-width="11" stroke-linecap="round" opacity=".8"/>
+<ellipse cx="188" cy="103" rx="46" ry="41" fill="url(#fur)" stroke="#849ba7" stroke-width="4"/>
+<ellipse cx="173" cy="96" rx="5" ry="7" fill="#293b4b"/><ellipse cx="204" cy="96" rx="5" ry="7" fill="#293b4b"/><circle cx="175" cy="93" r="1.6" fill="#fff"/><circle cx="206" cy="93" r="1.6" fill="#fff"/>
+<path d="m188 105 8 6-8 6-8-6Z" fill="#e78f9d"/><path d="M188 117q-10 11-22 3m22-3q11 11 22 2" fill="none" stroke="#627681" stroke-width="3" stroke-linecap="round"/>
+<path d="M157 113h-20m23 8h-22m80-8h21m-22 8h21" stroke="#8da4aa" stroke-width="2" stroke-linecap="round"/><circle cx="158" cy="111" r="7" fill="#f4b4bc" opacity=".5"/><circle cx="219" cy="111" r="7" fill="#f4b4bc" opacity=".5"/>
+</svg>

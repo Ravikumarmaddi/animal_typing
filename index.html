@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animal Typing Game</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="appRoot">
+  <nav id="topMenu" class="navbar px-2" aria-label="Game controls">
+    <div class="brand-mini" aria-label="Animal Typing">Animal Typing</div>
+    <div class="top-actions">
+      <button id="btnSetup" class="game-btn" type="button" data-bs-toggle="modal" data-bs-target="#setupModal"><img src="assets/icons/setup.svg" alt=""> <span>Setup</span></button>
+      <button id="btnNew" class="game-btn" type="button"><img src="assets/icons/new.svg" alt=""> <span>New Game</span></button>
+      <button id="btnPause" class="game-btn" type="button"><img id="pauseIcon" src="assets/icons/pause.svg" alt=""> <span id="pauseLabel">Pause</span></button>
+      <button id="btnSound" class="game-btn" type="button" aria-pressed="true"><img src="assets/icons/sound.svg" alt=""> <span>Sound</span></button>
+      <button id="btnKeyboard" class="game-btn" type="button" aria-pressed="true"><img src="assets/icons/keyboard.svg" alt=""> <span>Keyboard</span></button>
+      <button id="btnFullscreen" class="game-btn" type="button"><img src="assets/icons/fullscreen.svg" alt=""> <span>Full Screen</span></button>
+    </div>
+  </nav>
+
+  <div id="gameShell">
+    <aside id="infoPanel" aria-label="Game information">
+      <section class="player-card">
+        <div class="eyebrow">PLAYER</div>
+        <div id="playerNameDisplay" class="big-value">Player 1</div>
+      </section>
+      <div class="status-grid">
+        <div class="stat"><span>WPM</span><strong id="wpmDisplay">0</strong></div>
+        <div class="stat"><span>Accuracy</span><strong id="accuracyDisplay">100%</strong></div>
+        <div class="stat"><span>Errors</span><strong id="errorsDisplay">0</strong></div>
+        <div class="stat"><span>Correct</span><strong id="correctDisplay">0</strong></div>
+        <div class="stat"><span>Words</span><strong id="wordsDisplay">0</strong></div>
+        <div class="stat"><span>Progress</span><strong id="progressDisplay">0%</strong></div>
+        <div class="stat"><span>Time</span><strong id="timeDisplay">00:00</strong></div>
+        <div class="stat"><span>Score</span><strong id="scoreDisplay">0</strong></div>
+        <div class="stat target-stat"><span>Target</span><strong id="targetDisplay">—</strong></div>
+        <div class="stat lesson-stat"><span>Lesson</span><strong id="lessonDisplay">—</strong></div>
+      </div>
+      <section class="best-card">
+        <div class="eyebrow">PERSONAL BEST</div>
+        <div class="best-row"><span>Best WPM</span><strong id="bestWpm">—</strong></div>
+        <div class="best-row"><span>Best Accuracy</span><strong id="bestAccuracy">—</strong></div>
+        <div class="best-row"><span>Best Score</span><strong id="bestScore">—</strong></div>
+      </section>
+      <section class="recent-card">
+        <div class="eyebrow">LAST RESULT</div>
+        <div id="recentSummary" class="recent-text">No completed session yet.</div>
+      </section>
+    </aside>
+
+    <main id="mainGamePanel">
+      <section id="scene" aria-label="Animal performance scene">
+        <div id="finishFlag" aria-hidden="true">🏁</div>
+        <div id="animalTrack">
+          <img id="animalSprite" src="assets/animals/snail-v2.svg" alt="Snail performance animal">
+        </div>
+      </section>
+
+      <section id="typingArea" aria-label="Typing lesson">
+        <div id="typingText" tabindex="0" aria-live="off" aria-label="Typing target"></div>
+        <div id="errorFlash" role="status" aria-live="polite"></div>
+      </section>
+
+      <section id="keyboardZone" aria-label="On-screen keyboard and finger guide">
+        <div id="keyboard" aria-label="QWERTY keyboard"></div>
+      </section>
+
+      <div id="pausedOverlay" class="game-overlay" hidden>
+        <div class="overlay-card"><img src="assets/icons/pause.svg" alt=""><strong>Paused</strong><span>Press Resume to continue.</span></div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="modal fade" id="setupModal" tabindex="-1" aria-labelledby="setupTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content setup-modal">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="setupTitle">Game Setup</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="playerName" class="form-label">Player name</label>
+            <input id="playerName" class="form-control" maxlength="24" autocomplete="off">
+          </div>
+          <div class="col-md-6">
+            <label for="lessonSet" class="form-label">Lesson set</label>
+            <select id="lessonSet" class="form-select"></select>
+          </div>
+          <div class="col-md-8">
+            <label for="lessonSelect" class="form-label">Lesson</label>
+            <select id="lessonSelect" class="form-select"></select>
+          </div>
+          <div id="patternSelectWrap" class="col-md-4" hidden>
+            <label for="patternSelect" class="form-label">Pattern</label>
+            <select id="patternSelect" class="form-select"></select>
+          </div>
+          <div class="col-md-4">
+            <label for="keyboardLayout" class="form-label">Keyboard layout</label>
+            <select id="keyboardLayout" class="form-select"></select>
+          </div>
+          <div class="col-md-6">
+            <label for="sceneBackground" class="form-label">Background</label>
+            <select id="sceneBackground" class="form-select"></select>
+          </div>
+          <div id="customTextWrap" class="col-12" hidden>
+            <label for="customText" class="form-label">Custom local practice text</label>
+            <textarea id="customText" class="form-control" rows="3" maxlength="1200" placeholder="Type or paste practice text. It stays only in this browser."></textarea>
+          </div>
+          <div class="col-12">
+            <div class="setup-switch-grid">
+              <label class="form-check form-switch"><input id="showKeyboard" class="form-check-input" type="checkbox"><span>On-screen keyboard</span></label>
+              <label class="form-check form-switch"><input id="soundToggle" class="form-check-input" type="checkbox"><span>Sound</span></label>
+              <label class="form-check form-switch"><input id="reducedMotion" class="form-check-input" type="checkbox"><span>Reduced animation</span></label>
+              <label class="form-check form-switch"><input id="tapKeys" class="form-check-input" type="checkbox"><span>Allow on-screen key tapping</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <div>
+          <button id="btnResetSetup" type="button" class="btn btn-outline-secondary">Reset Setup Defaults</button>
+          <button id="btnResetAll" type="button" class="btn btn-outline-danger">Reset All Saved Data</button>
+        </div>
+        <button id="btnStart" type="button" class="btn btn-primary px-4">Start Game</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content results-modal">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="resultsTitle">Lesson Complete</h2>
+      </div>
+      <div class="modal-body">
+        <div id="resultMessage" class="result-message">Great work!</div>
+        <div class="result-grid">
+          <div><span>WPM</span><strong id="resultWpm">0</strong></div>
+          <div><span>Accuracy</span><strong id="resultAccuracy">100%</strong></div>
+          <div><span>Errors</span><strong id="resultErrors">0</strong></div>
+          <div><span>Time</span><strong id="resultTime">00:00</strong></div>
+          <div><span>Score</span><strong id="resultScore">0</strong></div>
+          <div><span>Animal</span><strong id="resultTier">Snail</strong></div>
+          <div><span>Correct Chars</span><strong id="resultCorrect">0</strong></div>
+          <div><span>Total Presses</span><strong id="resultPresses">0</strong></div>
+        </div>
+        <div id="personalBestBadge" class="personal-best" hidden>New personal best!</div>
+      </div>
+      <div class="modal-footer">
+        <button id="btnRetry" class="btn btn-outline-primary" type="button">Retry Lesson</button>
+        <button id="btnNext" class="btn btn-primary" type="button">Next Lesson</button>
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#setupModal">Setup</button>
+        <button class="btn btn-outline-secondary" type="button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="config/game-config.runtime.js"></script>
+<script src="js/namespace.js"></script>
+<script src="js/config-service.js"></script>
+<script src="js/storage-service.js"></script>
+<script src="js/lesson-service.js"></script>
+<script src="js/typing-engine.js"></script>
+<script src="js/animal-engine.js"></script>
+<script src="js/keyboard-renderer.js"></script>
+<script src="js/audio-service.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
