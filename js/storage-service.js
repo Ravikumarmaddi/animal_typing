@@ -55,7 +55,7 @@
         dateTime:new Date().toISOString(), player:playerName, mode:settings.lessonSet,
         lessonId:lesson.id, lessonTitle:lesson.title, wpm:metrics.wpm, accuracy:metrics.accuracy,
         errors:metrics.errors, correctChars:metrics.correct, totalPresses:metrics.total,
-        elapsedMs:metrics.elapsedMs, score:metrics.score, finalTier:finalTier.name
+        elapsedMs:metrics.elapsedMs, score:metrics.score, finalTier:finalTier.name, animalSet:settings.animalSet
       };
       const history = read("history", []);
       history.unshift(session);

@@ -22,7 +22,6 @@
     lessons = AT.LessonService(config);
     ui = AT.UI();
     audio = AT.AudioService(config);
-    animal = AT.AnimalEngine(config);
     keyboard = AT.KeyboardRenderer(config, $("keyboard"));
     settings = normalizeSettings(storage.getSettings());
 
@@ -42,6 +41,7 @@
     if(!setLessons.some(l=>l.id===merged.lessonId)) merged.lessonId=setLessons[0]?.id || config.defaults.lessonId;
     const selectedLesson=config.lessons.find(l=>l.id===merged.lessonId);
     if(!Number.isInteger(merged.patternIndex) || merged.patternIndex < 0 || merged.patternIndex >= (selectedLesson?.patterns?.length || 1)) merged.patternIndex=0;
+    if(!config.animalSets.some(s=>s.id===merged.animalSet)) merged.animalSet=config.defaults.animalSet;
     if(!config.keyboardLayouts.includes(merged.keyboardLayout)) merged.keyboardLayout=config.defaults.keyboardLayout;
     if(!Object.hasOwn(backgrounds,merged.sceneBackground)) merged.sceneBackground="meadow";
     merged.playerName=(merged.playerName||"Player 1").trim().slice(0,24)||"Player 1";
@@ -49,6 +49,7 @@
   }
 
   function populateStaticSetup(){
+    $("animalSet").innerHTML=config.animalSets.map(s=>`<option value="${escapeHtml(s.id)}">${escapeHtml(s.name)}</option>`).join("");
     $("lessonSet").innerHTML=config.lessonSets.map(s=>`<option value="${escapeHtml(s.id)}">${escapeHtml(s.name)}</option>`).join("");
     $("keyboardLayout").innerHTML=config.keyboardLayouts.map(id=>{
       const l=config.keyboardLayoutDefinitions[id]; return `<option value="${escapeHtml(id)}">${escapeHtml(l?.name||id)}</option>`;
@@ -79,6 +80,7 @@
     $("patternSelect").value=String(settings.patternIndex || 0);
     $("keyboardLayout").value=settings.keyboardLayout;
     $("sceneBackground").value=settings.sceneBackground;
+    $("animalSet").value=settings.animalSet;
     $("showKeyboard").checked=!!settings.showKeyboard;
     $("soundToggle").checked=!!settings.sound;
     $("reducedMotion").checked=!!settings.reducedMotion;
@@ -95,6 +97,7 @@
       patternIndex:Number($("patternSelect").value || 0),
       keyboardLayout:$("keyboardLayout").value,
       sceneBackground:$("sceneBackground").value,
+      animalSet:$("animalSet").value,
       showKeyboard:$("showKeyboard").checked,
       sound:$("soundToggle").checked,
       reducedMotion:$("reducedMotion").checked,
@@ -145,8 +148,7 @@
     document.addEventListener("keydown",onKeyDown,{passive:false});
     window.addEventListener("blur",()=>{ if(config.autoPauseOnBlur && engine && !engine.isPaused() && !engine.isComplete()) pauseGame(); });
 
-    $("setupModal").addEventListener("show.bs.modal",()=>{ if(engine && !engine.isPaused() && !engine.isComplete()) pauseGame(); });
-    $("setupModal").addEventListener("shown.bs.modal",()=>applySettingsToForm());
+    $("setupModal").addEventListener("show.bs.modal",()=>{ applySettingsToForm(); if(engine && !engine.isPaused() && !engine.isComplete()) pauseGame(); });
     document.addEventListener("fullscreenchange",()=>$("btnFullscreen").classList.toggle("active",!!document.fullscreenElement));
   }
 
@@ -170,6 +172,7 @@
     if(!text) text="practice typing with calm hands";
 
     engine=AT.TypingEngine({text,rollingWpmSeconds:config.rollingWpmSeconds});
+    animal=AT.AnimalEngine(config,settings.animalSet);
     const tier=animal.reset();
     audio.setEnabled(settings.sound);
     document.body.classList.toggle("reduced-motion",!!settings.reducedMotion);

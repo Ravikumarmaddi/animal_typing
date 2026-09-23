@@ -55,7 +55,7 @@
       <section id="scene" aria-label="Animal performance scene">
         <div id="finishFlag" aria-hidden="true">🏁</div>
         <div id="animalTrack">
-          <img id="animalSprite" src="assets/animals/snail-v2.svg" alt="Snail performance animal">
+          <div id="animalSprite" role="img" aria-label="Snail running character"></div>
         </div>
       </section>
 
@@ -107,6 +107,11 @@
           <div class="col-md-6">
             <label for="sceneBackground" class="form-label">Background</label>
             <select id="sceneBackground" class="form-select"></select>
+          </div>
+          <div class="col-md-6">
+            <label for="animalSet" class="form-label">Animal Set</label>
+            <select id="animalSet" class="form-select" aria-describedby="animalSetHelp"></select>
+            <div id="animalSetHelp" class="form-text">Eight running characters per set. Changes with your speed every four correct characters.</div>
           </div>
           <div id="customTextWrap" class="col-12" hidden>
             <label for="customText" class="form-label">Custom local practice text</label>

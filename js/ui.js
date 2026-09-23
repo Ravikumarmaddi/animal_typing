@@ -51,8 +51,27 @@
       els.animal.classList.toggle("running", metrics.correct > 0 && !metrics.paused && !metrics.completed);
     }
     function setAnimal(tier){
-      els.animal.style.opacity="0";
-      setTimeout(()=>{ els.animal.src=tier.asset; els.animal.alt=tier.name+" performance animal"; els.animal.style.opacity="1"; },120);
+      const frame=tier.frame;
+      const ns="http://www.w3.org/2000/svg";
+      const svg=document.createElementNS(ns,"svg");
+      svg.setAttribute("viewBox",[frame.x,frame.y,frame.width,frame.height].join(" "));
+      svg.setAttribute("preserveAspectRatio","xMidYMax meet");
+      svg.setAttribute("aria-hidden","true");
+      const clip=document.createElementNS(ns,"clipPath");
+      clip.id="character-clip";
+      const polygon=document.createElementNS(ns,"polygon");
+      polygon.setAttribute("points",frame.clip.map(p=>p.join(",")).join(" "));
+      clip.appendChild(polygon);
+      const picture=document.createElementNS(ns,"image");
+      picture.setAttribute("href",tier.asset);
+      picture.setAttribute("width",tier.imageWidth);
+      picture.setAttribute("height",tier.imageHeight);
+      picture.setAttribute("clip-path","url(#character-clip)");
+      svg.append(clip,picture);
+      els.animal.replaceChildren(svg);
+      els.animal.setAttribute("aria-label",tier.name+" running character");
+      els.animal.title=tier.name;
+      els.animal.style.setProperty("--stride-duration", (0.75/tier.movementMultiplier).toFixed(2)+"s");
     }
     function setPlayer(name){ els.player.textContent=name; }
     function setBest(best){

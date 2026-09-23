@@ -3,7 +3,6 @@
   "storageNamespace": "animalTyping.v1",
   "historyLimit": 100,
   "rollingWpmSeconds": 10,
-  "animalTierStabilitySeconds": 3,
   "autoPauseOnBlur": true,
   "timedDurations": [
     30,
@@ -32,7 +31,8 @@
     "keyClickSound": false,
     "reducedMotion": false,
     "showNextKeyHint": true,
-    "allowOnScreenKeyTap": false
+    "allowOnScreenKeyTap": false,
+    "animalSet": "real-world"
   },
   "animalTiers": [
     {
@@ -40,40 +40,64 @@
       "name": "Snail",
       "minEffectiveWpm": 0,
       "minAccuracy": 0,
-      "asset": "assets/animals/snail-v2.svg",
+      "asset": "assets/animals/snail-v3.svg",
       "movementMultiplier": 0.45
     },
     {
       "id": "turtle",
       "name": "Turtle",
       "minEffectiveWpm": 8,
-      "minAccuracy": 75,
-      "asset": "assets/animals/turtle-v2.svg",
-      "movementMultiplier": 0.65
+      "minAccuracy": 0,
+      "asset": "assets/animals/turtle-v3.svg",
+      "movementMultiplier": 0.5800000000000001
+    },
+    {
+      "id": "elephant",
+      "name": "Elephant",
+      "minEffectiveWpm": 14,
+      "minAccuracy": 0,
+      "asset": "assets/animals/elephant-v3.svg",
+      "movementMultiplier": 0.71
     },
     {
       "id": "rabbit",
       "name": "Rabbit",
-      "minEffectiveWpm": 18,
-      "minAccuracy": 85,
-      "asset": "assets/animals/rabbit-v2.svg",
-      "movementMultiplier": 0.85
+      "minEffectiveWpm": 20,
+      "minAccuracy": 0,
+      "asset": "assets/animals/rabbit-v3.svg",
+      "movementMultiplier": 0.8400000000000001
+    },
+    {
+      "id": "deer",
+      "name": "Deer",
+      "minEffectiveWpm": 28,
+      "minAccuracy": 0,
+      "asset": "assets/animals/deer-v3.svg",
+      "movementMultiplier": 0.97
     },
     {
       "id": "horse",
       "name": "Horse",
-      "minEffectiveWpm": 30,
-      "minAccuracy": 90,
-      "asset": "assets/animals/horse-v2.svg",
-      "movementMultiplier": 1
+      "minEffectiveWpm": 36,
+      "minAccuracy": 0,
+      "asset": "assets/animals/horse-v3.svg",
+      "movementMultiplier": 1.1
+    },
+    {
+      "id": "ostrich",
+      "name": "Ostrich",
+      "minEffectiveWpm": 45,
+      "minAccuracy": 0,
+      "asset": "assets/animals/ostrich-v3.svg",
+      "movementMultiplier": 1.23
     },
     {
       "id": "cheetah",
       "name": "Cheetah",
-      "minEffectiveWpm": 45,
-      "minAccuracy": 95,
-      "asset": "assets/animals/cheetah-v2.svg",
-      "movementMultiplier": 1.2
+      "minEffectiveWpm": 55,
+      "minAccuracy": 0,
+      "asset": "assets/animals/cheetah-v3.svg",
+      "movementMultiplier": 1.36
     }
   ],
   "audio": {
@@ -465,7 +489,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-02",
@@ -492,7 +516,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-03",
@@ -521,7 +545,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-04",
@@ -550,7 +574,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-05",
@@ -577,7 +601,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-06",
@@ -604,7 +628,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-07",
@@ -635,7 +659,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-08",
@@ -666,7 +690,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-09",
@@ -697,7 +721,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-10",
@@ -728,7 +752,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-11",
@@ -759,7 +783,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-12",
@@ -790,7 +814,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Home Row · Pattern 1 of 5"
+      "instruction": "Home Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-13",
@@ -816,7 +840,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-14",
@@ -843,7 +867,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-15",
@@ -871,7 +895,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-16",
@@ -902,7 +926,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-17",
@@ -929,7 +953,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-18",
@@ -957,7 +981,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-19",
@@ -985,7 +1009,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-20",
@@ -1018,7 +1042,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-21",
@@ -1051,7 +1075,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-22",
@@ -1084,7 +1108,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-23",
@@ -1119,7 +1143,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-24",
@@ -1152,7 +1176,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Top Row · Pattern 1 of 5"
+      "instruction": "Top Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-25",
@@ -1177,7 +1201,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-26",
@@ -1204,7 +1228,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-27",
@@ -1232,7 +1256,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-28",
@@ -1259,7 +1283,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-29",
@@ -1286,7 +1310,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-30",
@@ -1314,7 +1338,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-31",
@@ -1342,7 +1366,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-32",
@@ -1375,7 +1399,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-33",
@@ -1408,7 +1432,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-34",
@@ -1441,7 +1465,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-35",
@@ -1475,7 +1499,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-36",
@@ -1508,11 +1532,11 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Bottom Row · Pattern 1 of 5"
+      "instruction": "Bottom Row \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-37",
-      "title": "37. Number Row 1–5",
+      "title": "37. Number Row 1\u00e2\u20ac\u201c5",
       "lessonSet": "course-80",
       "section": "Numbers & Punctuation",
       "targetKeys": [
@@ -1536,11 +1560,11 @@
       "needsShift": false,
       "usesNumbers": true,
       "usesPunctuation": false,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-38",
-      "title": "38. Number Row 6–0",
+      "title": "38. Number Row 6\u00e2\u20ac\u201c0",
       "lessonSet": "course-80",
       "section": "Numbers & Punctuation",
       "targetKeys": [
@@ -1564,7 +1588,7 @@
       "needsShift": false,
       "usesNumbers": true,
       "usesPunctuation": false,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-39",
@@ -1597,7 +1621,7 @@
       "needsShift": false,
       "usesNumbers": true,
       "usesPunctuation": false,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-40",
@@ -1630,7 +1654,7 @@
       "needsShift": true,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-41",
@@ -1659,7 +1683,7 @@
       "needsShift": true,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-42",
@@ -1695,7 +1719,7 @@
       "needsShift": true,
       "usesNumbers": true,
       "usesPunctuation": true,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-43",
@@ -1747,7 +1771,7 @@
       "needsShift": false,
       "usesNumbers": true,
       "usesPunctuation": false,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-44",
@@ -1790,7 +1814,7 @@
       "needsShift": true,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Numbers & Punctuation · Pattern 1 of 5"
+      "instruction": "Numbers & Punctuation \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-45",
@@ -1822,7 +1846,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-46",
@@ -1855,7 +1879,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-47",
@@ -1887,7 +1911,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-48",
@@ -1919,7 +1943,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-49",
@@ -1954,7 +1978,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-50",
@@ -1990,7 +2014,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-51",
@@ -2016,7 +2040,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-52",
@@ -2042,7 +2066,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-53",
@@ -2068,7 +2092,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-54",
@@ -2094,7 +2118,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-55",
@@ -2120,7 +2144,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-56",
@@ -2146,7 +2170,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-57",
@@ -2172,7 +2196,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-58",
@@ -2198,7 +2222,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-59",
@@ -2224,7 +2248,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-60",
@@ -2250,7 +2274,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-61",
@@ -2294,7 +2318,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-62",
@@ -2339,7 +2363,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-63",
@@ -2383,7 +2407,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-64",
@@ -2427,7 +2451,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-65",
@@ -2471,7 +2495,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-66",
@@ -2517,7 +2541,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-67",
@@ -2562,7 +2586,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-68",
@@ -2611,7 +2635,7 @@
       "needsShift": true,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-69",
@@ -2664,7 +2688,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Mixed Rows · Pattern 1 of 5"
+      "instruction": "Mixed Rows \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-70",
@@ -2717,7 +2741,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Difficult · Pattern 1 of 5"
+      "instruction": "Difficult \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-71",
@@ -2768,7 +2792,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Difficult · Pattern 1 of 5"
+      "instruction": "Difficult \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-72",
@@ -2811,7 +2835,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Difficult · Pattern 1 of 5"
+      "instruction": "Difficult \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-73",
@@ -2854,7 +2878,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Difficult · Pattern 1 of 5"
+      "instruction": "Difficult \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-74",
@@ -2897,7 +2921,7 @@
       "needsShift": false,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Difficult · Pattern 1 of 5"
+      "instruction": "Difficult \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-75",
@@ -2957,7 +2981,7 @@
       "needsShift": true,
       "usesNumbers": false,
       "usesPunctuation": false,
-      "instruction": "Complex · Pattern 1 of 5"
+      "instruction": "Complex \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-76",
@@ -3011,7 +3035,7 @@
       "needsShift": true,
       "usesNumbers": true,
       "usesPunctuation": false,
-      "instruction": "Complex · Pattern 1 of 5"
+      "instruction": "Complex \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-77",
@@ -3067,7 +3091,7 @@
       "needsShift": false,
       "usesNumbers": true,
       "usesPunctuation": false,
-      "instruction": "Complex · Pattern 1 of 5"
+      "instruction": "Complex \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-78",
@@ -3134,7 +3158,7 @@
       "needsShift": true,
       "usesNumbers": false,
       "usesPunctuation": true,
-      "instruction": "Complex · Pattern 1 of 5"
+      "instruction": "Complex \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-79",
@@ -3203,7 +3227,7 @@
       "needsShift": true,
       "usesNumbers": true,
       "usesPunctuation": true,
-      "instruction": "Complex · Pattern 1 of 5"
+      "instruction": "Complex \u00c2\u00b7 Pattern 1 of 5"
     },
     {
       "id": "course-80-80",
@@ -3267,7 +3291,4650 @@
       "needsShift": true,
       "usesNumbers": true,
       "usesPunctuation": true,
-      "instruction": "Complex · Pattern 1 of 5"
+      "instruction": "Complex \u00c2\u00b7 Pattern 1 of 5"
+    }
+  ],
+  "animalLettersPerUpdate": 4,
+  "animalSets": [
+    {
+      "id": "real-world",
+      "name": "Real World Animals",
+      "asset": "assets/animals/sets/real-world.png",
+      "characters": [
+        "Snail",
+        "Turtle",
+        "Elephant",
+        "Rabbit",
+        "Deer",
+        "Horse",
+        "Ostrich",
+        "Cheetah"
+      ],
+      "imageWidth": 1774,
+      "imageHeight": 887,
+      "frames": [
+        {
+          "size": 40551,
+          "x": 32,
+          "y": 185,
+          "width": 417,
+          "height": 197,
+          "clip": [
+            [
+              33.34,
+              371.56
+            ],
+            [
+              66.93,
+              274.85
+            ],
+            [
+              69.98,
+              266.7
+            ],
+            [
+              73.04,
+              260.6
+            ],
+            [
+              79.15,
+              250.41
+            ],
+            [
+              81.18,
+              247.36
+            ],
+            [
+              86.27,
+              241.25
+            ],
+            [
+              98.49,
+              229.04
+            ],
+            [
+              105.62,
+              223.95
+            ],
+            [
+              114.78,
+              217.84
+            ],
+            [
+              126.99,
+              211.73
+            ],
+            [
+              132.08,
+              209.69
+            ],
+            [
+              141.25,
+              206.64
+            ],
+            [
+              153.46,
+              203.59
+            ],
+            [
+              158.55,
+              202.57
+            ],
+            [
+              406.94,
+              188.32
+            ],
+            [
+              411.01,
+              188.32
+            ],
+            [
+              413.05,
+              190.35
+            ],
+            [
+              446.64,
+              227.0
+            ],
+            [
+              447.66,
+              229.04
+            ],
+            [
+              447.66,
+              230.06
+            ],
+            [
+              403.89,
+              331.86
+            ],
+            [
+              401.85,
+              332.87
+            ],
+            [
+              294.96,
+              373.59
+            ],
+            [
+              291.91,
+              374.61
+            ],
+            [
+              286.82,
+              375.63
+            ],
+            [
+              279.69,
+              376.65
+            ],
+            [
+              265.44,
+              377.67
+            ],
+            [
+              195.2,
+              378.68
+            ],
+            [
+              132.08,
+              378.68
+            ],
+            [
+              103.58,
+              377.67
+            ],
+            [
+              76.09,
+              376.65
+            ],
+            [
+              52.68,
+              375.63
+            ],
+            [
+              37.41,
+              374.61
+            ],
+            [
+              34.35,
+              373.59
+            ],
+            [
+              33.34,
+              372.57
+            ]
+          ]
+        },
+        {
+          "size": 48900,
+          "x": 454,
+          "y": 175,
+          "width": 397,
+          "height": 222,
+          "clip": [
+            [
+              455.52,
+              361.33
+            ],
+            [
+              462.64,
+              299.23
+            ],
+            [
+              465.7,
+              293.13
+            ],
+            [
+              484.02,
+              264.62
+            ],
+            [
+              500.31,
+              242.23
+            ],
+            [
+              506.42,
+              234.08
+            ],
+            [
+              511.51,
+              227.97
+            ],
+            [
+              529.83,
+              209.65
+            ],
+            [
+              533.9,
+              206.6
+            ],
+            [
+              543.07,
+              200.49
+            ],
+            [
+              548.15,
+              197.43
+            ],
+            [
+              550.19,
+              196.42
+            ],
+            [
+              567.5,
+              188.27
+            ],
+            [
+              572.59,
+              186.24
+            ],
+            [
+              578.69,
+              184.2
+            ],
+            [
+              586.84,
+              182.16
+            ],
+            [
+              610.25,
+              178.09
+            ],
+            [
+              632.65,
+              178.09
+            ],
+            [
+              649.96,
+              180.13
+            ],
+            [
+              655.04,
+              181.15
+            ],
+            [
+              659.12,
+              182.16
+            ],
+            [
+              669.3,
+              185.22
+            ],
+            [
+              843.38,
+              243.24
+            ],
+            [
+              847.45,
+              247.32
+            ],
+            [
+              848.47,
+              249.35
+            ],
+            [
+              849.48,
+              257.5
+            ],
+            [
+              849.48,
+              262.59
+            ],
+            [
+              848.47,
+              267.68
+            ],
+            [
+              810.8,
+              372.53
+            ],
+            [
+              809.78,
+              373.55
+            ],
+            [
+              719.18,
+              393.91
+            ],
+            [
+              717.14,
+              393.91
+            ],
+            [
+              474.86,
+              388.82
+            ],
+            [
+              456.53,
+              384.75
+            ],
+            [
+              455.52,
+              369.48
+            ]
+          ]
+        },
+        {
+          "size": 81315,
+          "x": 872,
+          "y": 59,
+          "width": 501,
+          "height": 326,
+          "clip": [
+            [
+              872.58,
+              276.97
+            ],
+            [
+              873.6,
+              273.92
+            ],
+            [
+              879.71,
+              261.7
+            ],
+            [
+              883.78,
+              254.58
+            ],
+            [
+              949.95,
+              157.87
+            ],
+            [
+              959.11,
+              145.65
+            ],
+            [
+              966.24,
+              136.49
+            ],
+            [
+              988.63,
+              114.09
+            ],
+            [
+              996.78,
+              107.98
+            ],
+            [
+              999.83,
+              105.95
+            ],
+            [
+              1016.12,
+              97.8
+            ],
+            [
+              1019.17,
+              96.79
+            ],
+            [
+              1143.37,
+              63.19
+            ],
+            [
+              1148.46,
+              62.17
+            ],
+            [
+              1154.57,
+              61.16
+            ],
+            [
+              1168.82,
+              61.16
+            ],
+            [
+              1174.93,
+              62.17
+            ],
+            [
+              1183.07,
+              64.21
+            ],
+            [
+              1255.35,
+              83.55
+            ],
+            [
+              1258.4,
+              84.57
+            ],
+            [
+              1268.58,
+              89.66
+            ],
+            [
+              1277.74,
+              98.82
+            ],
+            [
+              1283.85,
+              107.98
+            ],
+            [
+              1372.42,
+              245.41
+            ],
+            [
+              1372.42,
+              247.45
+            ],
+            [
+              1350.02,
+              325.84
+            ],
+            [
+              1349.01,
+              328.89
+            ],
+            [
+              1347.99,
+              330.93
+            ],
+            [
+              1341.88,
+              337.03
+            ],
+            [
+              1273.67,
+              371.65
+            ],
+            [
+              1271.64,
+              372.66
+            ],
+            [
+              1263.49,
+              375.72
+            ],
+            [
+              1257.38,
+              377.75
+            ],
+            [
+              1253.31,
+              378.77
+            ],
+            [
+              918.39,
+              382.84
+            ],
+            [
+              916.36,
+              382.84
+            ],
+            [
+              910.25,
+              379.79
+            ],
+            [
+              907.19,
+              377.75
+            ],
+            [
+              902.1,
+              373.68
+            ],
+            [
+              899.05,
+              370.63
+            ],
+            [
+              893.96,
+              364.52
+            ],
+            [
+              887.85,
+              355.36
+            ],
+            [
+              883.78,
+              347.21
+            ],
+            [
+              872.58,
+              280.03
+            ]
+          ]
+        },
+        {
+          "size": 34873,
+          "x": 1366,
+          "y": 116,
+          "width": 380,
+          "height": 245,
+          "clip": [
+            [
+              1367.67,
+              311.29
+            ],
+            [
+              1368.69,
+              308.23
+            ],
+            [
+              1371.74,
+              302.12
+            ],
+            [
+              1375.81,
+              297.04
+            ],
+            [
+              1453.18,
+              209.49
+            ],
+            [
+              1456.24,
+              206.43
+            ],
+            [
+              1617.08,
+              124.99
+            ],
+            [
+              1640.49,
+              118.89
+            ],
+            [
+              1643.55,
+              118.89
+            ],
+            [
+              1646.6,
+              119.9
+            ],
+            [
+              1652.71,
+              122.96
+            ],
+            [
+              1655.76,
+              124.99
+            ],
+            [
+              1664.93,
+              134.16
+            ],
+            [
+              1720.92,
+              195.24
+            ],
+            [
+              1733.13,
+              212.54
+            ],
+            [
+              1740.26,
+              222.72
+            ],
+            [
+              1744.33,
+              327.57
+            ],
+            [
+              1744.33,
+              330.63
+            ],
+            [
+              1741.28,
+              355.06
+            ],
+            [
+              1740.26,
+              356.08
+            ],
+            [
+              1736.19,
+              358.12
+            ],
+            [
+              1727.02,
+              358.12
+            ],
+            [
+              1390.07,
+              343.86
+            ],
+            [
+              1389.05,
+              342.85
+            ],
+            [
+              1367.67,
+              319.43
+            ]
+          ]
+        },
+        {
+          "size": 35979,
+          "x": 11,
+          "y": 457,
+          "width": 415,
+          "height": 339,
+          "clip": [
+            [
+              12.35,
+              778.69
+            ],
+            [
+              70.38,
+              564.91
+            ],
+            [
+              73.44,
+              561.86
+            ],
+            [
+              330.99,
+              459.04
+            ],
+            [
+              332.01,
+              459.04
+            ],
+            [
+              397.16,
+              475.33
+            ],
+            [
+              398.18,
+              477.36
+            ],
+            [
+              399.19,
+              480.42
+            ],
+            [
+              424.64,
+              572.04
+            ],
+            [
+              424.64,
+              577.13
+            ],
+            [
+              370.69,
+              714.56
+            ],
+            [
+              368.65,
+              719.65
+            ],
+            [
+              364.58,
+              723.72
+            ],
+            [
+              352.37,
+              730.85
+            ],
+            [
+              348.3,
+              732.88
+            ],
+            [
+              337.1,
+              736.95
+            ],
+            [
+              334.04,
+              737.97
+            ],
+            [
+              42.9,
+              793.96
+            ],
+            [
+              40.86,
+              793.96
+            ],
+            [
+              13.37,
+              791.92
+            ],
+            [
+              12.35,
+              790.91
+            ]
+          ]
+        },
+        {
+          "size": 60456,
+          "x": 400,
+          "y": 489,
+          "width": 489,
+          "height": 325,
+          "clip": [
+            [
+              400.69,
+              710.03
+            ],
+            [
+              404.76,
+              691.71
+            ],
+            [
+              411.89,
+              671.35
+            ],
+            [
+              415.96,
+              663.21
+            ],
+            [
+              423.09,
+              649.97
+            ],
+            [
+              451.59,
+              615.36
+            ],
+            [
+              452.61,
+              614.34
+            ],
+            [
+              473.99,
+              603.14
+            ],
+            [
+              483.15,
+              599.07
+            ],
+            [
+              770.22,
+              494.22
+            ],
+            [
+              775.31,
+              493.2
+            ],
+            [
+              835.38,
+              491.16
+            ],
+            [
+              847.59,
+              491.16
+            ],
+            [
+              888.31,
+              574.64
+            ],
+            [
+              888.31,
+              579.73
+            ],
+            [
+              885.26,
+              770.1
+            ],
+            [
+              550.34,
+              810.82
+            ],
+            [
+              541.17,
+              811.84
+            ],
+            [
+              530.99,
+              811.84
+            ],
+            [
+              524.88,
+              810.82
+            ],
+            [
+              522.85,
+              809.8
+            ],
+            [
+              509.62,
+              801.65
+            ],
+            [
+              407.81,
+              722.25
+            ],
+            [
+              400.69,
+              715.12
+            ]
+          ]
+        },
+        {
+          "size": 39856,
+          "x": 912,
+          "y": 450,
+          "width": 394,
+          "height": 345,
+          "clip": [
+            [
+              913.54,
+              787.92
+            ],
+            [
+              941.03,
+              599.6
+            ],
+            [
+              945.1,
+              581.27
+            ],
+            [
+              947.14,
+              576.18
+            ],
+            [
+              951.21,
+              572.11
+            ],
+            [
+              960.37,
+              566.0
+            ],
+            [
+              1267.81,
+              451.99
+            ],
+            [
+              1273.92,
+              451.99
+            ],
+            [
+              1285.11,
+              456.06
+            ],
+            [
+              1302.42,
+              464.2
+            ],
+            [
+              1304.46,
+              466.24
+            ],
+            [
+              1304.46,
+              468.27
+            ],
+            [
+              1282.06,
+              792.0
+            ],
+            [
+              1280.02,
+              793.01
+            ],
+            [
+              1256.61,
+              793.01
+            ],
+            [
+              914.56,
+              792.0
+            ],
+            [
+              913.54,
+              790.98
+            ]
+          ]
+        },
+        {
+          "size": 33190,
+          "x": 1297,
+          "y": 582,
+          "width": 468,
+          "height": 197,
+          "clip": [
+            [
+              1297.88,
+              616.88
+            ],
+            [
+              1301.95,
+              612.8
+            ],
+            [
+              1305.0,
+              611.78
+            ],
+            [
+              1625.67,
+              586.34
+            ],
+            [
+              1648.07,
+              585.32
+            ],
+            [
+              1707.11,
+              585.32
+            ],
+            [
+              1721.37,
+              589.39
+            ],
+            [
+              1731.55,
+              598.55
+            ],
+            [
+              1733.58,
+              600.59
+            ],
+            [
+              1737.65,
+              607.71
+            ],
+            [
+              1742.74,
+              626.04
+            ],
+            [
+              1764.12,
+              715.62
+            ],
+            [
+              1764.12,
+              717.66
+            ],
+            [
+              1763.1,
+              719.69
+            ],
+            [
+              1761.07,
+              722.75
+            ],
+            [
+              1760.05,
+              723.76
+            ],
+            [
+              1758.01,
+              724.78
+            ],
+            [
+              1737.65,
+              727.84
+            ],
+            [
+              1349.8,
+              775.68
+            ],
+            [
+              1346.74,
+              775.68
+            ],
+            [
+              1345.72,
+              774.66
+            ],
+            [
+              1324.35,
+              751.25
+            ],
+            [
+              1323.33,
+              749.22
+            ],
+            [
+              1297.88,
+              621.97
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chibi",
+      "name": "Chibi Animals",
+      "asset": "assets/animals/sets/chibi.png",
+      "characters": [
+        "Snail",
+        "Turtle",
+        "Elephant",
+        "Rabbit",
+        "Deer",
+        "Horse",
+        "Ostrich",
+        "Cheetah"
+      ],
+      "imageWidth": 1774,
+      "imageHeight": 887,
+      "frames": [
+        {
+          "size": 61122,
+          "x": 20,
+          "y": 104,
+          "width": 389,
+          "height": 286,
+          "clip": [
+            [
+              21.59,
+              368.14
+            ],
+            [
+              68.42,
+              241.91
+            ],
+            [
+              71.47,
+              234.78
+            ],
+            [
+              72.49,
+              232.75
+            ],
+            [
+              76.56,
+              225.62
+            ],
+            [
+              86.74,
+              209.33
+            ],
+            [
+              91.83,
+              202.21
+            ],
+            [
+              94.89,
+              198.14
+            ],
+            [
+              113.21,
+              179.81
+            ],
+            [
+              117.28,
+              176.76
+            ],
+            [
+              129.5,
+              168.61
+            ],
+            [
+              145.78,
+              160.47
+            ],
+            [
+              154.95,
+              157.42
+            ],
+            [
+              328.01,
+              106.52
+            ],
+            [
+              338.19,
+              106.52
+            ],
+            [
+              386.03,
+              109.57
+            ],
+            [
+              390.11,
+              110.59
+            ],
+            [
+              393.16,
+              111.61
+            ],
+            [
+              395.19,
+              112.62
+            ],
+            [
+              400.28,
+              117.71
+            ],
+            [
+              402.32,
+              120.77
+            ],
+            [
+              406.39,
+              128.91
+            ],
+            [
+              407.41,
+              131.97
+            ],
+            [
+              407.41,
+              145.2
+            ],
+            [
+              385.01,
+              250.05
+            ],
+            [
+              384.0,
+              254.13
+            ],
+            [
+              380.94,
+              263.29
+            ],
+            [
+              372.8,
+              279.58
+            ],
+            [
+              340.22,
+              334.55
+            ],
+            [
+              334.12,
+              343.71
+            ],
+            [
+              328.01,
+              351.85
+            ],
+            [
+              322.92,
+              357.96
+            ],
+            [
+              311.72,
+              369.16
+            ],
+            [
+              307.65,
+              372.21
+            ],
+            [
+              302.56,
+              375.27
+            ],
+            [
+              292.38,
+              380.36
+            ],
+            [
+              286.27,
+              382.39
+            ],
+            [
+              280.16,
+              383.41
+            ],
+            [
+              263.87,
+              385.45
+            ],
+            [
+              251.66,
+              386.47
+            ],
+            [
+              233.33,
+              387.48
+            ],
+            [
+              196.69,
+              387.48
+            ],
+            [
+              138.66,
+              385.45
+            ],
+            [
+              91.83,
+              383.41
+            ],
+            [
+              60.27,
+              381.38
+            ],
+            [
+              49.07,
+              380.36
+            ],
+            [
+              40.93,
+              379.34
+            ],
+            [
+              35.84,
+              378.32
+            ],
+            [
+              31.77,
+              377.3
+            ],
+            [
+              28.72,
+              376.29
+            ],
+            [
+              24.64,
+              374.25
+            ],
+            [
+              22.61,
+              372.21
+            ],
+            [
+              21.59,
+              370.18
+            ]
+          ]
+        },
+        {
+          "size": 62536,
+          "x": 459,
+          "y": 77,
+          "width": 382,
+          "height": 317,
+          "clip": [
+            [
+              460.65,
+              333.74
+            ],
+            [
+              461.67,
+              328.65
+            ],
+            [
+              464.72,
+              319.49
+            ],
+            [
+              498.32,
+              248.22
+            ],
+            [
+              499.34,
+              246.19
+            ],
+            [
+              533.95,
+              195.29
+            ],
+            [
+              541.07,
+              187.14
+            ],
+            [
+              544.13,
+              184.09
+            ],
+            [
+              560.42,
+              168.82
+            ],
+            [
+              566.52,
+              164.75
+            ],
+            [
+              580.78,
+              157.62
+            ],
+            [
+              727.37,
+              86.36
+            ],
+            [
+              732.46,
+              84.33
+            ],
+            [
+              740.6,
+              81.27
+            ],
+            [
+              744.67,
+              80.25
+            ],
+            [
+              749.76,
+              79.24
+            ],
+            [
+              775.21,
+              79.24
+            ],
+            [
+              780.3,
+              80.25
+            ],
+            [
+              792.52,
+              84.33
+            ],
+            [
+              797.61,
+              86.36
+            ],
+            [
+              814.92,
+              93.49
+            ],
+            [
+              818.99,
+              95.53
+            ],
+            [
+              821.02,
+              97.56
+            ],
+            [
+              823.06,
+              100.62
+            ],
+            [
+              825.1,
+              106.72
+            ],
+            [
+              829.17,
+              120.97
+            ],
+            [
+              838.33,
+              156.61
+            ],
+            [
+              839.35,
+              160.68
+            ],
+            [
+              839.35,
+              172.89
+            ],
+            [
+              838.33,
+              176.97
+            ],
+            [
+              836.29,
+              183.07
+            ],
+            [
+              756.89,
+              356.13
+            ],
+            [
+              755.87,
+              358.17
+            ],
+            [
+              751.8,
+              364.28
+            ],
+            [
+              746.71,
+              370.38
+            ],
+            [
+              737.55,
+              379.55
+            ],
+            [
+              734.49,
+              381.58
+            ],
+            [
+              729.4,
+              384.64
+            ],
+            [
+              721.26,
+              388.71
+            ],
+            [
+              715.15,
+              390.75
+            ],
+            [
+              710.06,
+              391.76
+            ],
+            [
+              703.95,
+              391.76
+            ],
+            [
+              488.14,
+              364.28
+            ],
+            [
+              484.07,
+              363.26
+            ],
+            [
+              473.89,
+              360.2
+            ],
+            [
+              471.85,
+              359.19
+            ],
+            [
+              468.8,
+              356.13
+            ],
+            [
+              462.69,
+              349.01
+            ],
+            [
+              461.67,
+              346.97
+            ],
+            [
+              460.65,
+              343.92
+            ]
+          ]
+        },
+        {
+          "size": 95002,
+          "x": 886,
+          "y": 22,
+          "width": 453,
+          "height": 378,
+          "clip": [
+            [
+              887.01,
+              203.87
+            ],
+            [
+              889.05,
+              194.71
+            ],
+            [
+              965.4,
+              87.82
+            ],
+            [
+              971.51,
+              80.7
+            ],
+            [
+              974.56,
+              77.64
+            ],
+            [
+              982.7,
+              70.52
+            ],
+            [
+              990.85,
+              65.43
+            ],
+            [
+              1001.03,
+              60.34
+            ],
+            [
+              1010.19,
+              57.28
+            ],
+            [
+              1123.19,
+              23.69
+            ],
+            [
+              1129.3,
+              23.69
+            ],
+            [
+              1141.51,
+              25.72
+            ],
+            [
+              1327.81,
+              111.24
+            ],
+            [
+              1329.84,
+              112.25
+            ],
+            [
+              1332.9,
+              115.31
+            ],
+            [
+              1335.95,
+              121.42
+            ],
+            [
+              1337.99,
+              127.52
+            ],
+            [
+              1337.99,
+              134.65
+            ],
+            [
+              1255.53,
+              348.43
+            ],
+            [
+              1253.49,
+              352.5
+            ],
+            [
+              1251.46,
+              355.56
+            ],
+            [
+              1240.26,
+              368.79
+            ],
+            [
+              1238.22,
+              370.83
+            ],
+            [
+              1233.13,
+              374.9
+            ],
+            [
+              1224.99,
+              381.01
+            ],
+            [
+              1219.9,
+              384.06
+            ],
+            [
+              1215.83,
+              386.1
+            ],
+            [
+              1210.74,
+              388.13
+            ],
+            [
+              1207.68,
+              389.15
+            ],
+            [
+              1202.59,
+              390.17
+            ],
+            [
+              1027.5,
+              398.31
+            ],
+            [
+              1008.15,
+              398.31
+            ],
+            [
+              997.98,
+              397.29
+            ],
+            [
+              991.87,
+              396.28
+            ],
+            [
+              983.72,
+              394.24
+            ],
+            [
+              912.46,
+              370.83
+            ],
+            [
+              910.43,
+              369.81
+            ],
+            [
+              906.36,
+              366.75
+            ],
+            [
+              902.28,
+              362.68
+            ],
+            [
+              897.19,
+              356.57
+            ],
+            [
+              895.16,
+              353.52
+            ],
+            [
+              893.12,
+              349.45
+            ],
+            [
+              890.07,
+              340.29
+            ],
+            [
+              888.03,
+              330.11
+            ],
+            [
+              887.01,
+              207.95
+            ]
+          ]
+        },
+        {
+          "size": 63087,
+          "x": 1349,
+          "y": 33,
+          "width": 399,
+          "height": 332,
+          "clip": [
+            [
+              1350.5,
+              328.29
+            ],
+            [
+              1351.52,
+              324.21
+            ],
+            [
+              1352.54,
+              321.16
+            ],
+            [
+              1462.48,
+              63.61
+            ],
+            [
+              1463.5,
+              61.57
+            ],
+            [
+              1465.53,
+              58.52
+            ],
+            [
+              1466.55,
+              57.5
+            ],
+            [
+              1472.66,
+              54.44
+            ],
+            [
+              1476.73,
+              53.43
+            ],
+            [
+              1562.24,
+              35.1
+            ],
+            [
+              1570.39,
+              35.1
+            ],
+            [
+              1575.48,
+              36.12
+            ],
+            [
+              1579.55,
+              37.14
+            ],
+            [
+              1586.67,
+              39.17
+            ],
+            [
+              1591.77,
+              41.21
+            ],
+            [
+              1606.02,
+              47.32
+            ],
+            [
+              1621.29,
+              57.5
+            ],
+            [
+              1720.03,
+              156.24
+            ],
+            [
+              1724.11,
+              164.39
+            ],
+            [
+              1743.45,
+              214.27
+            ],
+            [
+              1746.5,
+              223.43
+            ],
+            [
+              1746.5,
+              231.58
+            ],
+            [
+              1745.48,
+              330.32
+            ],
+            [
+              1742.43,
+              336.43
+            ],
+            [
+              1741.41,
+              337.45
+            ],
+            [
+              1720.03,
+              354.75
+            ],
+            [
+              1716.98,
+              356.79
+            ],
+            [
+              1713.92,
+              357.81
+            ],
+            [
+              1427.87,
+              362.9
+            ],
+            [
+              1419.72,
+              362.9
+            ],
+            [
+              1363.73,
+              348.65
+            ],
+            [
+              1359.66,
+              346.61
+            ],
+            [
+              1352.54,
+              339.48
+            ],
+            [
+              1350.5,
+              334.39
+            ]
+          ]
+        },
+        {
+          "size": 56062,
+          "x": 8,
+          "y": 446,
+          "width": 383,
+          "height": 376,
+          "clip": [
+            [
+              9.64,
+              784.66
+            ],
+            [
+              10.66,
+              779.57
+            ],
+            [
+              11.68,
+              776.52
+            ],
+            [
+              96.17,
+              603.46
+            ],
+            [
+              100.25,
+              595.32
+            ],
+            [
+              173.54,
+              470.1
+            ],
+            [
+              175.58,
+              468.07
+            ],
+            [
+              177.61,
+              467.05
+            ],
+            [
+              267.2,
+              447.71
+            ],
+            [
+              270.25,
+              447.71
+            ],
+            [
+              272.29,
+              448.72
+            ],
+            [
+              275.34,
+              450.76
+            ],
+            [
+              293.67,
+              466.03
+            ],
+            [
+              349.65,
+              514.89
+            ],
+            [
+              356.78,
+              522.02
+            ],
+            [
+              388.34,
+              572.92
+            ],
+            [
+              389.36,
+              574.96
+            ],
+            [
+              389.36,
+              579.03
+            ],
+            [
+              385.28,
+              813.17
+            ],
+            [
+              384.27,
+              816.22
+            ],
+            [
+              381.21,
+              818.26
+            ],
+            [
+              378.16,
+              819.28
+            ],
+            [
+              372.05,
+              820.29
+            ],
+            [
+              359.84,
+              820.29
+            ],
+            [
+              175.58,
+              813.17
+            ],
+            [
+              12.7,
+              796.88
+            ],
+            [
+              11.68,
+              795.86
+            ],
+            [
+              9.64,
+              791.79
+            ]
+          ]
+        },
+        {
+          "size": 88185,
+          "x": 403,
+          "y": 441,
+          "width": 473,
+          "height": 400,
+          "clip": [
+            [
+              403.83,
+              643.04
+            ],
+            [
+              406.89,
+              638.96
+            ],
+            [
+              407.9,
+              637.95
+            ],
+            [
+              485.27,
+              578.9
+            ],
+            [
+              489.35,
+              575.85
+            ],
+            [
+              740.79,
+              446.56
+            ],
+            [
+              786.6,
+              442.49
+            ],
+            [
+              787.62,
+              442.49
+            ],
+            [
+              789.65,
+              443.51
+            ],
+            [
+              819.18,
+              466.92
+            ],
+            [
+              826.3,
+              474.05
+            ],
+            [
+              828.34,
+              477.1
+            ],
+            [
+              829.36,
+              479.14
+            ],
+            [
+              870.08,
+              562.61
+            ],
+            [
+              871.1,
+              565.67
+            ],
+            [
+              875.17,
+              789.63
+            ],
+            [
+              875.17,
+              794.72
+            ],
+            [
+              873.13,
+              797.77
+            ],
+            [
+              870.08,
+              800.83
+            ],
+            [
+              866.0,
+              803.88
+            ],
+            [
+              862.95,
+              805.92
+            ],
+            [
+              857.86,
+              808.97
+            ],
+            [
+              847.68,
+              814.06
+            ],
+            [
+              838.52,
+              817.11
+            ],
+            [
+              834.45,
+              818.13
+            ],
+            [
+              829.36,
+              819.15
+            ],
+            [
+              676.66,
+              838.49
+            ],
+            [
+              668.51,
+              839.51
+            ],
+            [
+              653.24,
+              839.51
+            ],
+            [
+              645.1,
+              838.49
+            ],
+            [
+              641.03,
+              837.47
+            ],
+            [
+              444.55,
+              784.54
+            ],
+            [
+              441.5,
+              783.52
+            ],
+            [
+              439.46,
+              782.5
+            ],
+            [
+              438.44,
+              781.48
+            ],
+            [
+              436.41,
+              778.43
+            ],
+            [
+              434.37,
+              774.36
+            ],
+            [
+              433.36,
+              770.29
+            ],
+            [
+              403.83,
+              650.16
+            ]
+          ]
+        },
+        {
+          "size": 54998,
+          "x": 886,
+          "y": 435,
+          "width": 408,
+          "height": 422,
+          "clip": [
+            [
+              887.42,
+              845.53
+            ],
+            [
+              911.85,
+              605.28
+            ],
+            [
+              918.98,
+              578.81
+            ],
+            [
+              919.99,
+              576.78
+            ],
+            [
+              922.03,
+              573.72
+            ],
+            [
+              939.34,
+              551.33
+            ],
+            [
+              943.41,
+              548.27
+            ],
+            [
+              1165.33,
+              437.31
+            ],
+            [
+              1172.46,
+              436.29
+            ],
+            [
+              1182.64,
+              436.29
+            ],
+            [
+              1210.12,
+              448.51
+            ],
+            [
+              1212.16,
+              449.53
+            ],
+            [
+              1247.79,
+              484.14
+            ],
+            [
+              1250.84,
+              487.19
+            ],
+            [
+              1251.86,
+              489.23
+            ],
+            [
+              1292.58,
+              817.02
+            ],
+            [
+              1292.58,
+              822.11
+            ],
+            [
+              1290.55,
+              824.15
+            ],
+            [
+              1272.22,
+              826.19
+            ],
+            [
+              898.62,
+              855.71
+            ],
+            [
+              895.56,
+              855.71
+            ],
+            [
+              893.53,
+              854.69
+            ],
+            [
+              892.51,
+              853.67
+            ],
+            [
+              888.44,
+              848.58
+            ],
+            [
+              887.42,
+              846.55
+            ]
+          ]
+        },
+        {
+          "size": 59320,
+          "x": 1306,
+          "y": 543,
+          "width": 461,
+          "height": 249,
+          "clip": [
+            [
+              1306.94,
+              595.73
+            ],
+            [
+              1307.96,
+              591.66
+            ],
+            [
+              1308.98,
+              588.61
+            ],
+            [
+              1311.01,
+              584.53
+            ],
+            [
+              1314.07,
+              580.46
+            ],
+            [
+              1319.16,
+              577.41
+            ],
+            [
+              1324.25,
+              575.37
+            ],
+            [
+              1631.68,
+              546.87
+            ],
+            [
+              1695.82,
+              545.85
+            ],
+            [
+              1704.98,
+              545.85
+            ],
+            [
+              1708.03,
+              546.87
+            ],
+            [
+              1712.11,
+              548.9
+            ],
+            [
+              1739.59,
+              565.19
+            ],
+            [
+              1745.7,
+              570.28
+            ],
+            [
+              1748.75,
+              573.34
+            ],
+            [
+              1752.83,
+              581.48
+            ],
+            [
+              1764.02,
+              624.24
+            ],
+            [
+              1766.06,
+              726.03
+            ],
+            [
+              1766.06,
+              731.12
+            ],
+            [
+              1765.04,
+              736.22
+            ],
+            [
+              1764.02,
+              738.25
+            ],
+            [
+              1735.52,
+              781.01
+            ],
+            [
+              1731.45,
+              785.08
+            ],
+            [
+              1727.38,
+              788.13
+            ],
+            [
+              1724.32,
+              789.15
+            ],
+            [
+              1392.45,
+              789.15
+            ],
+            [
+              1325.26,
+              784.06
+            ],
+            [
+              1322.21,
+              783.04
+            ],
+            [
+              1320.17,
+              782.02
+            ],
+            [
+              1315.09,
+              776.93
+            ],
+            [
+              1313.05,
+              773.88
+            ],
+            [
+              1312.03,
+              771.85
+            ],
+            [
+              1311.01,
+              764.72
+            ],
+            [
+              1306.94,
+              600.82
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinosaurs",
+      "name": "Dinosaurs",
+      "asset": "assets/animals/sets/dinosaurs.png",
+      "characters": [
+        "Ankylosaurus",
+        "Stegosaurus",
+        "Triceratops",
+        "Parasaurolophus",
+        "Pachycephalosaurus",
+        "Tyrannosaurus rex",
+        "Velociraptor",
+        "Ornithomimus"
+      ],
+      "imageWidth": 1774,
+      "imageHeight": 887,
+      "frames": [
+        {
+          "size": 50597,
+          "x": 4,
+          "y": 113,
+          "width": 451,
+          "height": 250,
+          "clip": [
+            [
+              5.03,
+              135.18
+            ],
+            [
+              6.05,
+              132.13
+            ],
+            [
+              9.1,
+              126.02
+            ],
+            [
+              15.21,
+              119.91
+            ],
+            [
+              18.26,
+              118.89
+            ],
+            [
+              31.5,
+              115.84
+            ],
+            [
+              37.61,
+              115.84
+            ],
+            [
+              294.14,
+              151.47
+            ],
+            [
+              325.7,
+              158.6
+            ],
+            [
+              355.22,
+              169.79
+            ],
+            [
+              357.26,
+              170.81
+            ],
+            [
+              379.65,
+              185.06
+            ],
+            [
+              428.52,
+              217.64
+            ],
+            [
+              438.7,
+              227.82
+            ],
+            [
+              442.77,
+              233.93
+            ],
+            [
+              449.9,
+              246.14
+            ],
+            [
+              452.95,
+              252.25
+            ],
+            [
+              453.97,
+              256.32
+            ],
+            [
+              453.97,
+              267.52
+            ],
+            [
+              452.95,
+              271.59
+            ],
+            [
+              427.5,
+              341.84
+            ],
+            [
+              424.45,
+              345.91
+            ],
+            [
+              417.32,
+              353.03
+            ],
+            [
+              405.11,
+              359.14
+            ],
+            [
+              402.05,
+              360.16
+            ],
+            [
+              273.78,
+              360.16
+            ],
+            [
+              113.96,
+              347.94
+            ],
+            [
+              111.92,
+              345.91
+            ],
+            [
+              104.8,
+              333.69
+            ],
+            [
+              9.1,
+              156.56
+            ],
+            [
+              7.07,
+              152.49
+            ],
+            [
+              6.05,
+              149.43
+            ],
+            [
+              5.03,
+              145.36
+            ]
+          ]
+        },
+        {
+          "size": 67241,
+          "x": 445,
+          "y": 38,
+          "width": 461,
+          "height": 341,
+          "clip": [
+            [
+              445.94,
+              157.09
+            ],
+            [
+              460.19,
+              132.66
+            ],
+            [
+              586.42,
+              64.45
+            ],
+            [
+              651.58,
+              40.02
+            ],
+            [
+              654.63,
+              40.02
+            ],
+            [
+              657.68,
+              41.04
+            ],
+            [
+              733.02,
+              68.53
+            ],
+            [
+              736.07,
+              70.56
+            ],
+            [
+              787.99,
+              115.35
+            ],
+            [
+              791.04,
+              118.41
+            ],
+            [
+              903.02,
+              231.41
+            ],
+            [
+              905.06,
+              235.48
+            ],
+            [
+              905.06,
+              241.59
+            ],
+            [
+              859.25,
+              333.2
+            ],
+            [
+              854.16,
+              338.3
+            ],
+            [
+              849.07,
+              340.33
+            ],
+            [
+              841.94,
+              342.37
+            ],
+            [
+              693.32,
+              376.98
+            ],
+            [
+              690.26,
+              376.98
+            ],
+            [
+              521.27,
+              343.38
+            ],
+            [
+              519.24,
+              342.37
+            ],
+            [
+              517.2,
+              340.33
+            ],
+            [
+              465.28,
+              220.21
+            ]
+          ]
+        },
+        {
+          "size": 59731,
+          "x": 888,
+          "y": 98,
+          "width": 458,
+          "height": 283,
+          "clip": [
+            [
+              888.97,
+              268.51
+            ],
+            [
+              889.99,
+              267.5
+            ],
+            [
+              1013.16,
+              176.89
+            ],
+            [
+              1019.27,
+              172.82
+            ],
+            [
+              1029.45,
+              166.71
+            ],
+            [
+              1041.67,
+              160.61
+            ],
+            [
+              1050.83,
+              156.53
+            ],
+            [
+              1055.92,
+              154.5
+            ],
+            [
+              1189.28,
+              101.56
+            ],
+            [
+              1203.53,
+              100.54
+            ],
+            [
+              1205.57,
+              100.54
+            ],
+            [
+              1216.76,
+              102.58
+            ],
+            [
+              1345.03,
+              130.06
+            ],
+            [
+              1317.55,
+              251.21
+            ],
+            [
+              1315.51,
+              257.31
+            ],
+            [
+              1268.68,
+              359.12
+            ],
+            [
+              1264.61,
+              364.2
+            ],
+            [
+              1258.5,
+              370.31
+            ],
+            [
+              1255.45,
+              372.35
+            ],
+            [
+              1253.41,
+              373.37
+            ],
+            [
+              1243.23,
+              377.44
+            ],
+            [
+              1239.16,
+              378.46
+            ],
+            [
+              1233.05,
+              378.46
+            ],
+            [
+              955.14,
+              365.22
+            ],
+            [
+              954.12,
+              364.2
+            ],
+            [
+              944.96,
+              351.99
+            ],
+            [
+              888.97,
+              271.57
+            ]
+          ]
+        },
+        {
+          "size": 47068,
+          "x": 1333,
+          "y": 71,
+          "width": 436,
+          "height": 320,
+          "clip": [
+            [
+              1334.17,
+              234.05
+            ],
+            [
+              1335.18,
+              229.98
+            ],
+            [
+              1336.2,
+              226.93
+            ],
+            [
+              1338.24,
+              221.84
+            ],
+            [
+              1339.26,
+              219.8
+            ],
+            [
+              1342.31,
+              214.71
+            ],
+            [
+              1344.35,
+              211.66
+            ],
+            [
+              1350.45,
+              204.53
+            ],
+            [
+              1358.6,
+              196.39
+            ],
+            [
+              1363.69,
+              192.32
+            ],
+            [
+              1370.81,
+              187.23
+            ],
+            [
+              1373.87,
+              185.19
+            ],
+            [
+              1384.05,
+              179.08
+            ],
+            [
+              1388.12,
+              177.05
+            ],
+            [
+              1399.32,
+              171.96
+            ],
+            [
+              1413.57,
+              165.85
+            ],
+            [
+              1628.37,
+              78.3
+            ],
+            [
+              1640.58,
+              74.23
+            ],
+            [
+              1645.67,
+              73.21
+            ],
+            [
+              1670.11,
+              73.21
+            ],
+            [
+              1675.2,
+              74.23
+            ],
+            [
+              1682.32,
+              76.26
+            ],
+            [
+              1691.48,
+              79.32
+            ],
+            [
+              1701.66,
+              84.41
+            ],
+            [
+              1706.75,
+              87.46
+            ],
+            [
+              1722.02,
+              97.64
+            ],
+            [
+              1741.37,
+              116.98
+            ],
+            [
+              1766.82,
+              145.49
+            ],
+            [
+              1767.83,
+              147.52
+            ],
+            [
+              1767.83,
+              152.61
+            ],
+            [
+              1712.86,
+              286.99
+            ],
+            [
+              1669.09,
+              380.65
+            ],
+            [
+              1666.03,
+              384.72
+            ],
+            [
+              1665.02,
+              385.74
+            ],
+            [
+              1641.6,
+              388.79
+            ],
+            [
+              1631.42,
+              387.77
+            ],
+            [
+              1419.68,
+              345.02
+            ],
+            [
+              1417.64,
+              342.98
+            ],
+            [
+              1335.18,
+              246.27
+            ],
+            [
+              1334.17,
+              244.23
+            ]
+          ]
+        },
+        {
+          "size": 47024,
+          "x": 4,
+          "y": 483,
+          "width": 443,
+          "height": 331,
+          "clip": [
+            [
+              5.1,
+              611.34
+            ],
+            [
+              6.12,
+              609.31
+            ],
+            [
+              9.17,
+              605.24
+            ],
+            [
+              17.32,
+              598.11
+            ],
+            [
+              25.46,
+              593.02
+            ],
+            [
+              43.79,
+              583.86
+            ],
+            [
+              54.98,
+              579.78
+            ],
+            [
+              374.64,
+              487.15
+            ],
+            [
+              378.71,
+              486.13
+            ],
+            [
+              386.85,
+              485.11
+            ],
+            [
+              388.89,
+              485.11
+            ],
+            [
+              396.01,
+              486.13
+            ],
+            [
+              399.07,
+              487.15
+            ],
+            [
+              407.21,
+              491.22
+            ],
+            [
+              412.3,
+              495.29
+            ],
+            [
+              417.39,
+              500.38
+            ],
+            [
+              420.45,
+              504.45
+            ],
+            [
+              429.61,
+              521.76
+            ],
+            [
+              443.86,
+              551.28
+            ],
+            [
+              445.9,
+              563.5
+            ],
+            [
+              445.9,
+              570.62
+            ],
+            [
+              444.88,
+              575.71
+            ],
+            [
+              442.84,
+              579.78
+            ],
+            [
+              366.49,
+              684.64
+            ],
+            [
+              295.23,
+              772.19
+            ],
+            [
+              292.18,
+              775.24
+            ],
+            [
+              290.14,
+              776.26
+            ],
+            [
+              137.44,
+              811.89
+            ],
+            [
+              106.9,
+              811.89
+            ],
+            [
+              101.81,
+              809.85
+            ],
+            [
+              97.74,
+              807.82
+            ],
+            [
+              95.7,
+              805.78
+            ],
+            [
+              93.67,
+              801.71
+            ],
+            [
+              5.1,
+              612.36
+            ]
+          ]
+        },
+        {
+          "size": 57071,
+          "x": 443,
+          "y": 478,
+          "width": 445,
+          "height": 333,
+          "clip": [
+            [
+              444.09,
+              640.94
+            ],
+            [
+              445.1,
+              633.81
+            ],
+            [
+              448.16,
+              624.65
+            ],
+            [
+              452.23,
+              616.5
+            ],
+            [
+              455.28,
+              612.43
+            ],
+            [
+              468.52,
+              599.2
+            ],
+            [
+              474.62,
+              595.13
+            ],
+            [
+              481.75,
+              591.05
+            ],
+            [
+              487.86,
+              588.0
+            ],
+            [
+              492.95,
+              585.97
+            ],
+            [
+              756.61,
+              484.16
+            ],
+            [
+              759.66,
+              483.15
+            ],
+            [
+              767.81,
+              481.11
+            ],
+            [
+              775.95,
+              480.09
+            ],
+            [
+              781.04,
+              480.09
+            ],
+            [
+              832.96,
+              485.18
+            ],
+            [
+              835.0,
+              486.2
+            ],
+            [
+              868.59,
+              510.63
+            ],
+            [
+              872.66,
+              513.69
+            ],
+            [
+              879.79,
+              520.81
+            ],
+            [
+              881.83,
+              524.88
+            ],
+            [
+              884.88,
+              534.05
+            ],
+            [
+              885.9,
+              538.12
+            ],
+            [
+              886.91,
+              546.26
+            ],
+            [
+              886.91,
+              551.35
+            ],
+            [
+              885.9,
+              554.41
+            ],
+            [
+              853.32,
+              621.6
+            ],
+            [
+              703.67,
+              779.38
+            ],
+            [
+              700.62,
+              782.44
+            ],
+            [
+              698.59,
+              783.46
+            ],
+            [
+              561.15,
+              808.91
+            ],
+            [
+              521.45,
+              808.91
+            ],
+            [
+              516.36,
+              807.89
+            ],
+            [
+              513.31,
+              806.87
+            ],
+            [
+              510.25,
+              803.82
+            ],
+            [
+              509.24,
+              801.78
+            ],
+            [
+              448.16,
+              668.42
+            ],
+            [
+              446.12,
+              663.33
+            ],
+            [
+              445.1,
+              659.26
+            ],
+            [
+              444.09,
+              654.17
+            ]
+          ]
+        },
+        {
+          "size": 41881,
+          "x": 888,
+          "y": 520,
+          "width": 444,
+          "height": 284,
+          "clip": [
+            [
+              889.09,
+              532.71
+            ],
+            [
+              892.15,
+              522.53
+            ],
+            [
+              895.2,
+              522.53
+            ],
+            [
+              1243.36,
+              537.8
+            ],
+            [
+              1249.47,
+              538.82
+            ],
+            [
+              1264.74,
+              541.88
+            ],
+            [
+              1275.93,
+              545.95
+            ],
+            [
+              1281.02,
+              549.0
+            ],
+            [
+              1320.73,
+              573.43
+            ],
+            [
+              1328.87,
+              581.58
+            ],
+            [
+              1329.89,
+              583.61
+            ],
+            [
+              1330.91,
+              586.67
+            ],
+            [
+              1330.91,
+              593.79
+            ],
+            [
+              1268.81,
+              799.43
+            ],
+            [
+              1267.79,
+              800.45
+            ],
+            [
+              1248.45,
+              801.47
+            ],
+            [
+              1245.39,
+              801.47
+            ],
+            [
+              980.71,
+              776.02
+            ],
+            [
+              978.68,
+              773.98
+            ],
+            [
+              976.64,
+              770.93
+            ],
+            [
+              975.62,
+              768.89
+            ],
+            [
+              889.09,
+              534.75
+            ]
+          ]
+        },
+        {
+          "size": 39013,
+          "x": 1336,
+          "y": 467,
+          "width": 420,
+          "height": 357,
+          "clip": [
+            [
+              1337.31,
+              584.93
+            ],
+            [
+              1339.35,
+              581.88
+            ],
+            [
+              1342.4,
+              578.82
+            ],
+            [
+              1348.51,
+              573.73
+            ],
+            [
+              1356.65,
+              568.64
+            ],
+            [
+              1364.8,
+              564.57
+            ],
+            [
+              1379.05,
+              560.5
+            ],
+            [
+              1700.74,
+              468.88
+            ],
+            [
+              1712.95,
+              468.88
+            ],
+            [
+              1720.08,
+              470.91
+            ],
+            [
+              1748.58,
+              485.16
+            ],
+            [
+              1752.65,
+              488.22
+            ],
+            [
+              1754.69,
+              491.27
+            ],
+            [
+              1754.69,
+              495.35
+            ],
+            [
+              1707.86,
+              813.98
+            ],
+            [
+              1685.47,
+              816.01
+            ],
+            [
+              1391.26,
+              822.12
+            ],
+            [
+              1386.17,
+              822.12
+            ],
+            [
+              1384.14,
+              820.09
+            ],
+            [
+              1379.05,
+              797.69
+            ],
+            [
+              1337.31,
+              585.95
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anime",
+      "name": "Famous Anime Characters",
+      "asset": "assets/animals/sets/anime.png",
+      "characters": [
+        "Doraemon",
+        "Pikachu",
+        "Tanjiro",
+        "Luffy",
+        "Naruto",
+        "Deku",
+        "Goku",
+        "Sailor Moon"
+      ],
+      "imageWidth": 1774,
+      "imageHeight": 887,
+      "frames": [
+        {
+          "size": 75253,
+          "x": 53,
+          "y": 51,
+          "width": 333,
+          "height": 374,
+          "clip": [
+            [
+              55.09,
+              300.1
+            ],
+            [
+              57.13,
+              224.77
+            ],
+            [
+              59.16,
+              218.66
+            ],
+            [
+              62.22,
+              212.55
+            ],
+            [
+              151.8,
+              100.57
+            ],
+            [
+              156.89,
+              94.46
+            ],
+            [
+              171.14,
+              80.21
+            ],
+            [
+              179.29,
+              74.1
+            ],
+            [
+              182.34,
+              72.07
+            ],
+            [
+              187.43,
+              69.01
+            ],
+            [
+              196.59,
+              63.92
+            ],
+            [
+              201.69,
+              61.89
+            ],
+            [
+              209.83,
+              58.83
+            ],
+            [
+              212.88,
+              57.81
+            ],
+            [
+              225.1,
+              54.76
+            ],
+            [
+              230.19,
+              53.74
+            ],
+            [
+              237.31,
+              52.72
+            ],
+            [
+              266.84,
+              52.72
+            ],
+            [
+              273.96,
+              53.74
+            ],
+            [
+              280.07,
+              54.76
+            ],
+            [
+              285.16,
+              55.78
+            ],
+            [
+              303.49,
+              61.89
+            ],
+            [
+              308.57,
+              63.92
+            ],
+            [
+              319.77,
+              70.03
+            ],
+            [
+              325.88,
+              74.1
+            ],
+            [
+              334.02,
+              80.21
+            ],
+            [
+              342.17,
+              88.35
+            ],
+            [
+              380.85,
+              128.06
+            ],
+            [
+              382.89,
+              132.13
+            ],
+            [
+              383.91,
+              135.18
+            ],
+            [
+              383.91,
+              139.25
+            ],
+            [
+              366.6,
+              281.77
+            ],
+            [
+              365.58,
+              286.86
+            ],
+            [
+              364.56,
+              289.92
+            ],
+            [
+              361.51,
+              295.01
+            ],
+            [
+              265.82,
+              401.9
+            ],
+            [
+              257.68,
+              410.04
+            ],
+            [
+              251.57,
+              415.13
+            ],
+            [
+              245.46,
+              419.2
+            ],
+            [
+              241.39,
+              421.24
+            ],
+            [
+              235.28,
+              423.28
+            ],
+            [
+              223.06,
+              423.28
+            ],
+            [
+              86.65,
+              394.77
+            ],
+            [
+              80.54,
+              391.72
+            ],
+            [
+              74.44,
+              385.61
+            ],
+            [
+              71.38,
+              381.54
+            ],
+            [
+              68.33,
+              375.43
+            ],
+            [
+              66.29,
+              370.34
+            ],
+            [
+              65.27,
+              367.29
+            ],
+            [
+              64.25,
+              363.21
+            ],
+            [
+              63.24,
+              358.12
+            ],
+            [
+              55.09,
+              301.12
+            ]
+          ]
+        },
+        {
+          "size": 64685,
+          "x": 471,
+          "y": 30,
+          "width": 352,
+          "height": 368,
+          "clip": [
+            [
+              472.92,
+              114.24
+            ],
+            [
+              473.94,
+              97.95
+            ],
+            [
+              474.96,
+              93.88
+            ],
+            [
+              475.98,
+              92.86
+            ],
+            [
+              659.22,
+              31.78
+            ],
+            [
+              665.32,
+              31.78
+            ],
+            [
+              673.47,
+              33.81
+            ],
+            [
+              682.63,
+              36.87
+            ],
+            [
+              690.77,
+              39.92
+            ],
+            [
+              709.1,
+              49.08
+            ],
+            [
+              721.31,
+              57.23
+            ],
+            [
+              729.46,
+              63.34
+            ],
+            [
+              789.52,
+              119.33
+            ],
+            [
+              793.59,
+              123.4
+            ],
+            [
+              800.72,
+              131.54
+            ],
+            [
+              803.77,
+              136.63
+            ],
+            [
+              805.81,
+              140.7
+            ],
+            [
+              820.06,
+              174.3
+            ],
+            [
+              821.08,
+              182.44
+            ],
+            [
+              821.08,
+              189.57
+            ],
+            [
+              819.04,
+              266.94
+            ],
+            [
+              818.02,
+              271.01
+            ],
+            [
+              783.41,
+              343.29
+            ],
+            [
+              781.38,
+              347.36
+            ],
+            [
+              779.34,
+              350.41
+            ],
+            [
+              776.29,
+              354.48
+            ],
+            [
+              761.02,
+              369.75
+            ],
+            [
+              740.66,
+              386.04
+            ],
+            [
+              738.62,
+              387.06
+            ],
+            [
+              734.55,
+              388.08
+            ],
+            [
+              551.31,
+              396.22
+            ],
+            [
+              548.25,
+              396.22
+            ],
+            [
+              546.22,
+              395.2
+            ],
+            [
+              543.16,
+              392.15
+            ],
+            [
+              542.15,
+              390.11
+            ],
+            [
+              473.94,
+              180.41
+            ],
+            [
+              472.92,
+              176.33
+            ]
+          ]
+        },
+        {
+          "size": 80446,
+          "x": 900,
+          "y": 7,
+          "width": 377,
+          "height": 422,
+          "clip": [
+            [
+              901.7,
+              373.75
+            ],
+            [
+              905.77,
+              157.94
+            ],
+            [
+              906.79,
+              155.9
+            ],
+            [
+              1114.46,
+              35.78
+            ],
+            [
+              1163.32,
+              8.29
+            ],
+            [
+              1164.34,
+              8.29
+            ],
+            [
+              1218.3,
+              13.38
+            ],
+            [
+              1219.31,
+              14.4
+            ],
+            [
+              1239.67,
+              39.85
+            ],
+            [
+              1241.71,
+              43.92
+            ],
+            [
+              1242.73,
+              46.98
+            ],
+            [
+              1247.82,
+              73.44
+            ],
+            [
+              1268.18,
+              205.78
+            ],
+            [
+              1275.3,
+              382.92
+            ],
+            [
+              1275.3,
+              385.97
+            ],
+            [
+              1274.29,
+              388.01
+            ],
+            [
+              1262.07,
+              400.22
+            ],
+            [
+              1258.0,
+              403.28
+            ],
+            [
+              1254.94,
+              405.31
+            ],
+            [
+              1226.44,
+              422.62
+            ],
+            [
+              1216.26,
+              427.71
+            ],
+            [
+              1212.19,
+              427.71
+            ],
+            [
+              910.86,
+              405.31
+            ],
+            [
+              908.82,
+              404.29
+            ],
+            [
+              903.73,
+              399.2
+            ],
+            [
+              902.72,
+              397.17
+            ],
+            [
+              901.7,
+              392.08
+            ]
+          ]
+        },
+        {
+          "size": 65899,
+          "x": 1350,
+          "y": 6,
+          "width": 386,
+          "height": 423,
+          "clip": [
+            [
+              1351.62,
+              368.67
+            ],
+            [
+              1352.63,
+              360.53
+            ],
+            [
+              1390.3,
+              190.52
+            ],
+            [
+              1391.32,
+              187.47
+            ],
+            [
+              1397.43,
+              180.34
+            ],
+            [
+              1567.43,
+              19.5
+            ],
+            [
+              1570.49,
+              17.46
+            ],
+            [
+              1575.58,
+              14.41
+            ],
+            [
+              1577.61,
+              13.39
+            ],
+            [
+              1582.7,
+              11.35
+            ],
+            [
+              1591.86,
+              8.3
+            ],
+            [
+              1596.95,
+              7.28
+            ],
+            [
+              1615.28,
+              7.28
+            ],
+            [
+              1697.74,
+              14.41
+            ],
+            [
+              1700.79,
+              15.43
+            ],
+            [
+              1703.84,
+              18.48
+            ],
+            [
+              1704.86,
+              21.53
+            ],
+            [
+              1722.17,
+              184.41
+            ],
+            [
+              1734.38,
+              366.64
+            ],
+            [
+              1734.38,
+              368.67
+            ],
+            [
+              1731.33,
+              374.78
+            ],
+            [
+              1727.26,
+              380.89
+            ],
+            [
+              1724.2,
+              384.96
+            ],
+            [
+              1720.13,
+              389.03
+            ],
+            [
+              1690.61,
+              416.52
+            ],
+            [
+              1684.5,
+              421.61
+            ],
+            [
+              1678.39,
+              425.68
+            ],
+            [
+              1674.32,
+              427.72
+            ],
+            [
+              1666.18,
+              427.72
+            ],
+            [
+              1364.85,
+              388.01
+            ],
+            [
+              1358.74,
+              387.0
+            ],
+            [
+              1353.65,
+              381.91
+            ],
+            [
+              1352.63,
+              379.87
+            ],
+            [
+              1351.62,
+              374.78
+            ]
+          ]
+        },
+        {
+          "size": 64750,
+          "x": 20,
+          "y": 443,
+          "width": 392,
+          "height": 430,
+          "clip": [
+            [
+              21.56,
+              823.93
+            ],
+            [
+              25.63,
+              792.38
+            ],
+            [
+              26.65,
+              786.27
+            ],
+            [
+              27.67,
+              782.2
+            ],
+            [
+              75.52,
+              618.3
+            ],
+            [
+              76.53,
+              615.24
+            ],
+            [
+              77.55,
+              613.21
+            ],
+            [
+              147.79,
+              510.39
+            ],
+            [
+              148.81,
+              509.37
+            ],
+            [
+              154.92,
+              506.32
+            ],
+            [
+              287.26,
+              451.35
+            ],
+            [
+              316.78,
+              444.22
+            ],
+            [
+              318.82,
+              444.22
+            ],
+            [
+              348.34,
+              448.29
+            ],
+            [
+              372.77,
+              462.54
+            ],
+            [
+              373.79,
+              463.56
+            ],
+            [
+              384.99,
+              483.92
+            ],
+            [
+              410.44,
+              624.41
+            ],
+            [
+              410.44,
+              632.55
+            ],
+            [
+              380.92,
+              821.9
+            ],
+            [
+              376.84,
+              828.01
+            ],
+            [
+              372.77,
+              833.1
+            ],
+            [
+              365.65,
+              840.22
+            ],
+            [
+              356.48,
+              847.35
+            ],
+            [
+              326.96,
+              868.73
+            ],
+            [
+              322.89,
+              870.76
+            ],
+            [
+              319.84,
+              871.78
+            ],
+            [
+              317.8,
+              871.78
+            ],
+            [
+              33.78,
+              857.53
+            ],
+            [
+              27.67,
+              856.51
+            ],
+            [
+              24.62,
+              853.46
+            ],
+            [
+              22.58,
+              847.35
+            ],
+            [
+              21.56,
+              841.24
+            ]
+          ]
+        },
+        {
+          "size": 72043,
+          "x": 444,
+          "y": 447,
+          "width": 399,
+          "height": 428,
+          "clip": [
+            [
+              445.5,
+              792.32
+            ],
+            [
+              447.53,
+              781.12
+            ],
+            [
+              457.72,
+              744.48
+            ],
+            [
+              458.73,
+              741.42
+            ],
+            [
+              517.78,
+              615.19
+            ],
+            [
+              546.28,
+              559.2
+            ],
+            [
+              552.39,
+              551.06
+            ],
+            [
+              561.55,
+              541.89
+            ],
+            [
+              569.69,
+              535.79
+            ],
+            [
+              572.75,
+              533.75
+            ],
+            [
+              577.84,
+              530.7
+            ],
+            [
+              710.18,
+              459.44
+            ],
+            [
+              740.72,
+              448.24
+            ],
+            [
+              742.75,
+              448.24
+            ],
+            [
+              794.67,
+              455.36
+            ],
+            [
+              808.92,
+              466.56
+            ],
+            [
+              829.28,
+              486.92
+            ],
+            [
+              834.38,
+              508.3
+            ],
+            [
+              841.5,
+              625.37
+            ],
+            [
+              841.5,
+              641.66
+            ],
+            [
+              830.3,
+              813.7
+            ],
+            [
+              829.28,
+              815.74
+            ],
+            [
+              827.25,
+              818.79
+            ],
+            [
+              824.19,
+              822.86
+            ],
+            [
+              811.98,
+              835.08
+            ],
+            [
+              804.85,
+              841.19
+            ],
+            [
+              772.28,
+              865.62
+            ],
+            [
+              766.17,
+              869.69
+            ],
+            [
+              760.06,
+              872.74
+            ],
+            [
+              757.01,
+              873.76
+            ],
+            [
+              752.93,
+              873.76
+            ],
+            [
+              456.7,
+              822.86
+            ],
+            [
+              453.64,
+              821.84
+            ],
+            [
+              450.59,
+              819.81
+            ],
+            [
+              448.55,
+              817.77
+            ],
+            [
+              447.53,
+              815.74
+            ],
+            [
+              446.52,
+              812.68
+            ],
+            [
+              445.5,
+              808.61
+            ]
+          ]
+        },
+        {
+          "size": 68259,
+          "x": 906,
+          "y": 441,
+          "width": 392,
+          "height": 433,
+          "clip": [
+            [
+              907.56,
+              765.92
+            ],
+            [
+              908.58,
+              759.81
+            ],
+            [
+              910.62,
+              752.68
+            ],
+            [
+              952.35,
+              612.2
+            ],
+            [
+              956.43,
+              607.11
+            ],
+            [
+              981.88,
+              579.62
+            ],
+            [
+              986.97,
+              574.53
+            ],
+            [
+              1005.29,
+              557.23
+            ],
+            [
+              1016.49,
+              548.07
+            ],
+            [
+              1078.59,
+              501.24
+            ],
+            [
+              1107.09,
+              479.86
+            ],
+            [
+              1217.03,
+              443.21
+            ],
+            [
+              1221.11,
+              442.19
+            ],
+            [
+              1228.23,
+              442.19
+            ],
+            [
+              1292.37,
+              480.88
+            ],
+            [
+              1293.38,
+              481.89
+            ],
+            [
+              1296.44,
+              545.01
+            ],
+            [
+              1296.44,
+              546.03
+            ],
+            [
+              1285.24,
+              816.82
+            ],
+            [
+              1281.17,
+              822.92
+            ],
+            [
+              1275.06,
+              831.07
+            ],
+            [
+              1267.93,
+              838.19
+            ],
+            [
+              1257.75,
+              847.36
+            ],
+            [
+              1236.38,
+              865.68
+            ],
+            [
+              1232.3,
+              868.74
+            ],
+            [
+              1226.2,
+              871.79
+            ],
+            [
+              1223.14,
+              872.81
+            ],
+            [
+              1221.11,
+              872.81
+            ],
+            [
+              914.69,
+              787.3
+            ],
+            [
+              910.62,
+              785.26
+            ],
+            [
+              908.58,
+              783.22
+            ],
+            [
+              907.56,
+              779.15
+            ]
+          ]
+        },
+        {
+          "size": 66186,
+          "x": 1342,
+          "y": 455,
+          "width": 414,
+          "height": 416,
+          "clip": [
+            [
+              1343.36,
+              678.27
+            ],
+            [
+              1349.47,
+              608.03
+            ],
+            [
+              1350.49,
+              601.92
+            ],
+            [
+              1351.51,
+              596.83
+            ],
+            [
+              1353.54,
+              590.72
+            ],
+            [
+              1355.58,
+              585.63
+            ],
+            [
+              1356.6,
+              583.6
+            ],
+            [
+              1362.71,
+              574.43
+            ],
+            [
+              1365.76,
+              570.36
+            ],
+            [
+              1375.94,
+              560.18
+            ],
+            [
+              1386.12,
+              552.04
+            ],
+            [
+              1391.21,
+              548.98
+            ],
+            [
+              1405.46,
+              541.86
+            ],
+            [
+              1614.15,
+              457.36
+            ],
+            [
+              1619.24,
+              456.35
+            ],
+            [
+              1653.85,
+              456.35
+            ],
+            [
+              1657.93,
+              457.36
+            ],
+            [
+              1706.79,
+              474.67
+            ],
+            [
+              1707.81,
+              475.69
+            ],
+            [
+              1716.97,
+              485.87
+            ],
+            [
+              1723.08,
+              494.01
+            ],
+            [
+              1725.11,
+              498.08
+            ],
+            [
+              1726.13,
+              501.14
+            ],
+            [
+              1727.15,
+              505.21
+            ],
+            [
+              1752.6,
+              613.12
+            ],
+            [
+              1754.64,
+              826.9
+            ],
+            [
+              1754.64,
+              827.92
+            ],
+            [
+              1753.62,
+              830.97
+            ],
+            [
+              1750.56,
+              835.04
+            ],
+            [
+              1746.49,
+              839.11
+            ],
+            [
+              1740.38,
+              844.2
+            ],
+            [
+              1736.31,
+              847.26
+            ],
+            [
+              1710.86,
+              865.58
+            ],
+            [
+              1707.81,
+              867.62
+            ],
+            [
+              1703.74,
+              869.65
+            ],
+            [
+              1700.68,
+              869.65
+            ],
+            [
+              1389.17,
+              866.6
+            ],
+            [
+              1387.14,
+              865.58
+            ],
+            [
+              1385.1,
+              863.55
+            ],
+            [
+              1383.07,
+              859.47
+            ],
+            [
+              1382.05,
+              855.4
+            ],
+            [
+              1343.36,
+              693.54
+            ]
+          ]
+        }
+      ]
     }
   ]
 }
